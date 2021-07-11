@@ -1,5 +1,40 @@
 
+
+# Run on Google cloud
+* Create a project and associate it to a billing ID
+* Open a shell [terminal](https://shell.cloud.google.com/?show=terminal) into google cloud
+* Set the following environment variables variables.  The project name will need to be unique.
+```
+export PROJECT=? 
+```
+
+* Set the project. 
+```
+gcloud config set project $PROJECT
+```
+* Enable APIs
+```
+gcloud services enable run.googleapis.com
+gcloud services enable artifactregistry.googleapis.com
+gcloud services enable cloudbuild.googleapis.com
+```
+
+* Clone the application and change directories to it
+```
+git clone https://github.com/craigivy/node-automl.git
+cd node-automl/
+```
+
+* Deploy the app to cloud run
+```
+gcloud beta run deploy node-automl --source .
+```
+
+
+
+
 ## Run Locally
+install [node.js](https://nodejs.org/en/download/)
 
 install dependencies:
 ```
@@ -17,3 +52,4 @@ originally generated with:
 ```
 $ npx express-generator --view=hbs --git node-automl
 ```
+
