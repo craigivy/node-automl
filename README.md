@@ -19,13 +19,6 @@ npm install
 DEBUG=myapp:* npm start
 ```
 
-## More
-
-Originally generated with:
-```
-$ npx express-generator --view=hbs --git node-automl
-```
-
 ### Run on google cloud
 * Create a project and associate it to a billing ID
 * Set the following environment variables variables.  The project name will need to be unique.
@@ -48,4 +41,11 @@ gcloud services enable cloudbuild.googleapis.com
 * Deploy the app to cloud run
 ```
 gcloud beta run deploy node-automl --source .
+```
+
+## More
+
+Originally generated with:
+```
+$ npx express-generator --view=hbs --git node-automl
 ```
