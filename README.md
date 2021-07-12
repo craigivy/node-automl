@@ -31,25 +31,22 @@ cd node-automl/
 gcloud beta run deploy node-automl --source .
 ```
 
+## Run in the cloud shell
+* Open a shell [terminal](https://shell.cloud.google.com/?show=terminal) into google cloud
 
-
-
-## Run Locally
-install [node.js](https://nodejs.org/en/download/)
-
-install dependencies:
+* Install dependencies:
 ```
 npm install
 ```
 
-run the app:
+* Run the app:
 ```
 DEBUG=myapp:* npm start
 ```
 
 ## More
 
-originally generated with:
+Originally generated with:
 ```
 $ npx express-generator --view=hbs --git node-automl
 ```
