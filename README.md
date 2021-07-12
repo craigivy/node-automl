@@ -33,6 +33,7 @@ gcloud beta run deploy node-automl --source .
 
 ## Run in the cloud shell
 * Open a shell [terminal](https://shell.cloud.google.com/?show=terminal) into google cloud
+* execute the *clone the application and change directories to it* step above if not already completed
 
 * Install dependencies:
 ```
