@@ -8,9 +8,10 @@
 export PROJECT=? 
 ```
 
-* Set the project. 
+* Set the project and region
 ```
 gcloud config set project $PROJECT
+gcloud config set run/region us-central1
 ```
 * Enable APIs
 ```
